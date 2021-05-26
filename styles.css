@@ -1,0 +1,96 @@
+:root {
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --gray: #F2F2F2;
+}
+
+* {
+    font-family: raleway, sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+#main-wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#logo {
+    padding-top: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+#nav_bar li {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+li a {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 0.9em;
+}
+
+a span {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--blue);
+    border-top: var(--blue) solid 2px;
+}
+
+#search_text h2 {
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+
+/*--section 3 search_icon --*/
+
+.submit_button {
+    background-color: var(--blue);
+    border: solid 1px var(--blue);
+    border-radius: 0 20px 20px 0;
+    color: white;
+    height: 54px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.input_field {
+    height: 50px;
+    border: solid 1px var(--gray);
+    font-size: 1em;
+    font-weight: bold;
+    cursor: auto;
+    padding-left: 20px;
+}
+
+#map_icon {
+    display: flex;
+    background-color: var(--gray);
+    border-radius: 20px 0 0 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    width: 50px;
+    height: 54px;
+}
+
+.search_button {
+    display: inline-flex;
+    cursor: hand;
+}
