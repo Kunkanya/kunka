@@ -1,124 +1,189 @@
-                                                                                                                                                             :root {
-                                                                                                                                                                --blue: #0065FC;
-                                                                                                                                                                --lightblue: #DEEBFF;
-                                                                                                                                                                --gray: #F2F2F2;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            * {
-                                                                                                                                                                font-family: raleway, sans-serif;
-                                                                                                                                                                font-weight: normal;
-                                                                                                                                                                color: black;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            #main-wrapper {
-                                                                                                                                                                width: 1000px;
-                                                                                                                                                                margin: auto;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            header {
-                                                                                                                                                                display: flex;
-                                                                                                                                                                flex-direction: row;
-                                                                                                                                                                justify-content: space-between;
-                                                                                                                                                                align-items: flex-start;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            #logo {
-                                                                                                                                                                padding-top: 30px;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            nav ul {
-                                                                                                                                                                list-style-type: none;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            #nav_bar li {
-                                                                                                                                                                display: inline-flex;
-                                                                                                                                                                flex-direction: row;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            li a {
-                                                                                                                                                                text-decoration: none;
-                                                                                                                                                                padding-left: 20px;
-                                                                                                                                                                padding-top: 30px;
-                                                                                                                                                                font-size: 0.9em;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            a span {
-                                                                                                                                                                color: var(--blue);
-                                                                                                                                                                font-weight: bold;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            a:hover {
-                                                                                                                                                                color: var(--blue);
-                                                                                                                                                                border-top: var(--blue) solid 2px;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            #search_text h2 {
-                                                                                                                                                                font-weight: bolder;
-                                                                                                                                                                margin-bottom: 0px;
-                                                                                                                                                            }
-                                                                                                                                                            /*--section 3 search_icon --*/
-                                                                                                                                                            
-                                                                                                                                                            .submit_button {
-                                                                                                                                                                background-color: var(--blue);
-                                                                                                                                                                border: solid 1px var(--blue);
-                                                                                                                                                                border-radius: 0 20px 20px 0;
-                                                                                                                                                                color: white;
-                                                                                                                                                                height: 54px;
-                                                                                                                                                                font-size: 1em;
-                                                                                                                                                                font-weight: bold;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            .input_field {
-                                                                                                                                                                height: 50px;
-                                                                                                                                                                border: solid 1px var(--gray);
-                                                                                                                                                                font-size: 1em;
-                                                                                                                                                                font-weight: bold;
-                                                                                                                                                                cursor: auto;
-                                                                                                                                                                padding-left: 20px;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            #map_icon {
-                                                                                                                                                                display: flex;
-                                                                                                                                                                background-color: var(--gray);
-                                                                                                                                                                border-radius: 20px 0 0 20px;
-                                                                                                                                                                justify-content: center;
-                                                                                                                                                                align-items: center;
-                                                                                                                                                                border-radius: 20px 0 0 20px;
-                                                                                                                                                                width: 50px;
-                                                                                                                                                                height: 54px;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            .search_button {
-                                                                                                                                                                display: inline-flex;
-                                                                                                                                                                cursor: hand;
-                                                                                                                                                            }
-                                                                                                                                                            /*-- Section 4 --*/
-                                                                                                                                                            
-                                                                                                                                                            .filter_icon {
-                                                                                                                                                                display: inline-flex;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            .filter_icon i {
-                                                                                                                                                                display: flex;
-                                                                                                                                                                justify-content: center;
-                                                                                                                                                                align-items: center;
-                                                                                                                                                                color: var(--blue);
-                                                                                                                                                                border-radius: 50px;
-                                                                                                                                                                background-color: var(--lightblue);
-                                                                                                                                                                width: 50px;
-                                                                                                                                                                height: 50px;
-                                                                                                                                                                position: relative;
-                                                                                                                                                            }
-                                                                                                                                                            
-                                                                                                                                                            .filter_name {
-                                                                                                                                                                padding-left: 30px;
-                                                                                                                                                                font-weight: bold;
-                                                                                                                                                                width: 200px;
-                                                                                                                                                                height: 50px;
-                                                                                                                                                                border: solid var(--gray) 1px;
-                                                                                                                                                                border-radius: 50px;
-                                                                                                                                                                margin-top: 0;
-                                                                                                                                                                text-align: center;
-                                                                                                                                                                vertical-align: middle;
-                                                                                                                                                                position: absolute;
-                                                                                                                                                            }
+:root {
+    --blue: #0065FC;
+    --lightblue: #DEEBFF;
+    --gray: #F2F2F2;
+}
+    
+* {
+    font-family: raleway, sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-wrapper {
+ padding-left : 50px;
+ margin: auto;
+ }
+ 
+ header {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: flex-start;
+ }
+ 
+ #logo {
+ padding-top: 30px;
+ }
+ 
+nav ul {
+    list-style-type: none;
+}
+
+#nav_bar li {
+    display: inline-flex;
+    flex-direction: row;
+}    
+
+li a {
+
+    margin-left: 20px;
+    padding: 30px 20px 20px 30px;
+    
+    font-size: 0.9em;
+    text-align : center;
+ 
+}
+a span {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+li a:hover {
+    color: var(--blue);
+    border-top: var(--blue) solid 2px;                                                              
+}               
+
+#search_text h2 {
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+/*--section 3 search_icon --*/
+.submit_button {
+    background-color: var(--blue);
+    border: solid 1px var(--blue);
+    border-radius: 0 20px 20px 0;
+    color: white;
+    height: 54px;
+    width: 150px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.input_field {
+    height: 50px;
+    border: solid 1px var(--gray);
+    font-size: 1em;
+    font-weight: bold;
+    cursor: auto;
+    padding-left: 20px;
+}
+
+#map_icon {
+    display: flex;
+    background-color: var(--gray);
+    border-radius: 20px 0 0 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    width: 50px;
+    height: 54px;
+}
+
+.search_button {
+    display: inline-flex;
+    cursor: hand;
+}
+
+/*-- Section 4 --*/
+.filter_icon {
+display: inline-flex;
+margin-right : 10px;
+margin-left : 25px;
+}
+
+p span{
+    font-weight: bold;
+}
+.filter_icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    border-radius: 50px;
+    background-color: var(--lightblue);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.filter_name {
+    display:flex;
+    align-items :center;
+    justify-content : flex-end;
+    font-weight: bold;
+    border: solid var(--gray) 2px;
+    border-radius: 50px;
+    margin-top: 0;
+    position: relative ;   
+    padding-right: 20px;  
+}         
+.filter_name:hover{
+    color : var(--blue);
+    border: solid var(--blue) 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+ 
+}
+
+#eco_icon{
+    width: 150px;
+    height: 43px;
+}
+
+#fam_icon{
+    width: 120px;
+    height: 43px;
+}
+
+#rom_icon{
+    width: 150px;
+    height: 43px;
+}
+
+#ani_icon{
+    width: 200px;
+    height: 43px;
+}
+
+ .filter_container{                                       
+    display : flex;
+    margin-top: 30px;
+}            
+
+.info{
+    display : flex;
+    
+}
+
+.info i{
+    margin-top : 10px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    border : solid var(--gray) 1px;
+    color: var(--blue);
+    border-radius :  50px;
+    height:25px;
+    width:25px;
+}
+
+.info p{
+    
+    padding-left: 20px;
+}
+
