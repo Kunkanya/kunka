@@ -317,6 +317,9 @@ div.star {
     background-color: var(--gray);
     height: auto;
     border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 div.aside_container {
@@ -324,7 +327,11 @@ div.aside_container {
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
-    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1vw;
+    margin-bottom: 1vw;
+    padding-top: 0;
 }
 
 ul#aside_header {
@@ -333,7 +340,7 @@ ul#aside_header {
     justify-content: space-between;
     align-items: center;
     margin-top: 5vh;
-    margin-right: 3vh;
+    margin-right: 5vh;
 }
 
 ul#aside_header h1 span {
@@ -358,27 +365,30 @@ a.aside_hotel_card {
 
 div.aside_pic_box {
     width: 125px;
-    height: 136px;
+    height: 138px;
     overflow: hidden;
-    border: solid red 2px;
     border-radius: 20px 0 0 20px;
 }
 
-.aside_pic_box img {
-    max-width: 100%;
+img.aside_hotel_pic {
+    max-height: 100%;
+    margin-left: -3vw;
 }
 
 div.aside_hotel_description {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: space-between;
     width: 50%;
-    margin: 1vw 0 3vw 1vw;
+    margin: 1vw 0 0 1vw;
 }
 
-div.aside_star {
-    display: flex;
-    height: 2vh;
-    margin-bottom: 0;
-    padding-bottom: 0;
+div.aside_hotel_text {
+    height: 16vh;
+}
+
+img.hotel_blue_et_blanc {
+    max-width: 100%;
+    margin-top: -3vw;
 }
