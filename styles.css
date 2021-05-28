@@ -189,15 +189,65 @@ p span {
 }
 
 
+/*-- contaier for section 5 + 6 --*/
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+
 /*--Section 5: Hébergement à Marseille--*/
 
-section.hotel_container {
+section.wrapper {
+    width: 65%;
+    background-color: var(--gray);
+    border-radius: 20px 20px 20px 20px;
+}
+
+div#header_text {
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 4vh;
+    margin-bottom: 0vh;
+    padding-bottom: 0vh;
+    padding-right: 4vh;
+}
+
+div#section_foot_text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 12vh;
+    padding-top: 0vh;
+    margin-top: 0vh;
+    font-weight: bolder;
+}
+
+div#header_text h1 span {
+    font-weight: bold;
+    padding-left: 2.5vw;
+}
+
+div#section_foot_text p span {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 2.5vw;
+}
+
+div.hotel_container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 65%;
+    max-width: 100%;
     height: auto;
-    background-color: var(--gray);
+    padding: 0 1.2vw 1.2vw 1.2vw;
+    margin-top: 0;
 }
 
 div.hotel_marseille {
@@ -211,15 +261,25 @@ div.hotel_marseille {
     margin: 0.8em;
 }
 
-img.hotel_pic {
+div.hotel_pic_box {
     width: 225px;
     height: 112px;
     border-radius: 20px 20px 0 0;
+    overflow: hidden;
 }
 
-div.hotel_marseille i {
-    font-size: 0.8em;
-    padding: 0;
+.hotel_pic_box img {
+    max-width: 100%;
+    margin-top: -15px;
+    display: block;
+}
+
+#hotel_amina {
+    margin-top: -20vh;
+}
+
+img#hotel_mer {
+    margin-top: -8vh;
 }
 
 p.hotel_name {
@@ -247,4 +307,78 @@ div.star {
 
 .gray {
     color: var(--gray);
+}
+
+
+/*--Section 6: Aside -Les plus populaires--*/
+
+.aside_wrapper {
+    width: 32%;
+    background-color: var(--gray);
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div.aside_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    margin-top: 0;
+}
+
+ul#aside_header {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+    margin-right: 3vh;
+}
+
+ul#aside_header h1 span {
+    font-weight: bold;
+}
+
+ul#aside_header li {
+    text-decoration: none;
+}
+
+a.aside_hotel_card {
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    height: 140px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: solid white 5px;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+    margin: 0.8em;
+}
+
+div.aside_pic_box {
+    width: 125px;
+    height: 136px;
+    overflow: hidden;
+    border: solid red 2px;
+    border-radius: 20px 0 0 20px;
+}
+
+.aside_pic_box img {
+    max-width: 100%;
+}
+
+div.aside_hotel_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 1vw 0 3vw 1vw;
+}
+
+div.aside_star {
+    display: flex;
+    height: 2vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
