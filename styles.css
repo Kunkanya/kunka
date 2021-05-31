@@ -10,13 +10,21 @@
     color: black;
 }
 
+ul {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
 }
 
+li a {
+    text-decoration: none;
+}
+
 #main-wrapper {
-    padding-left: 50px;
     margin: auto;
+    width: 95%;
 }
 
 header {
@@ -30,19 +38,15 @@ header {
     padding-top: 30px;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
 #nav_bar li {
     display: inline-flex;
     flex-direction: row;
 }
 
-li a {
+#nav_bar li a {
     margin-left: 20px;
     padding: 30px 20px 20px 30px;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -51,7 +55,7 @@ nav a span {
     font-weight: bold;
 }
 
-li a:hover {
+#nav_bar li a:hover {
     color: var(--blue);
     border-top: var(--blue) solid 2px;
 }
@@ -191,7 +195,7 @@ p span {
 
 /*-- contaier for section 5 + 6 --*/
 
-div.container {
+main.container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -201,7 +205,7 @@ div.container {
 
 /*--Section 5: Hébergement à Marseille--*/
 
-section.wrapper {
+section#herbergement {
     width: 65%;
     background-color: var(--gray);
     border-radius: 20px 20px 20px 20px;
@@ -312,7 +316,7 @@ div.star {
 
 /*--Section 6: Aside -Les plus populaires--*/
 
-.aside_wrapper {
+#aside_wrapper {
     width: 32%;
     background-color: var(--gray);
     height: auto;
@@ -391,4 +395,191 @@ div.aside_hotel_text {
 img.hotel_blue_et_blanc {
     max-width: 100%;
     margin-top: -3vw;
+}
+
+
+/*--section 7: Activity --*/
+
+h2 span {
+    font-weight: bold;
+}
+
+#activity_header {
+    margin-top: 10vh;
+}
+
+div.activity_card_container {
+    display: grid;
+    height: 450px;
+    grid-gap: 1.7rem;
+    grid-template-areas: "card1 card2 card4 card5" "card1 card3 card4 card6";
+}
+
+div.card_1 {
+    grid-area: card1;
+}
+
+div.card_2 {
+    grid-area: card2;
+}
+
+div.card_3 {
+    grid-area: card3;
+    margin-top: 2rem;
+}
+
+div.card_4 {
+    grid-area: card4;
+}
+
+div.card_5 {
+    grid-area: card5;
+}
+
+div.card_6 {
+    grid-area: card6;
+    margin-top: -0.4rem;
+}
+
+
+/*--card 1--*/
+
+div.card_1 {
+    height: 450px;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+}
+
+div.activity_card_box_1 {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+img.activity_card_pic_1 {
+    max-height: 100%;
+    margin-left: -10vw;
+}
+
+
+/*--card 2--*/
+
+div.card_2 {
+    height: 230px;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+}
+
+div.activity_card_box_2 {
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+img.activity_card_pic_2 {
+    max-width: 100%;
+    margin-top: -18vh;
+}
+
+
+/*--card 3--*/
+
+div.card_3 {
+    height: 160px;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+}
+
+div.activity_card_box_3 {
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+img.activity_card_pic_3 {
+    max-width: 100%;
+    margin-top: -4vh;
+}
+
+
+/*--card 4--*/
+
+div.card_4 {
+    height: 450px;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+}
+
+
+/*--card 5--*/
+
+div.card_5 {
+    height: 190px;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+}
+
+div.activity_card_box_5 {
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+img.activity_card_pic_5 {
+    max-width: 100%;
+    margin-top: -1vh;
+}
+
+
+/*--card 6--*/
+
+div.card_6 {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+}
+
+div.activity_card_box_6 {
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+img.activity_card_pic_6 {
+    max-width: 100%;
+    margin-top: -1vh;
+}
+
+div.activity_text p span {
+    height: 150px;
+    font-weight: bold;
+    padding-top: 3vw;
+    padding-left: 1.5vw;
+}
+
+footer {
+    margin-top: 4rem;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footer li:first-child {
+    font-weight: bold;
+    margin: 2em 0 0.5em 0;
+}
+
+.footer li {
+    padding-bottom: 1em;
+}
+
+.footer {
+    padding: 0 14rem 3rem 2rem;
 }
