@@ -1,8 +1,12 @@
 <!DOCTYPE Html>
 <html lang ="fr">
+
 <head>
-    <title>Openclassroom Projet 2 : Reservia</title>
+    <title>Reservia : Openclassroom Projet 2 </title>
+    <link rel="icon" type="image/svg+xml" href="images/logo/Reservia.svg">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/32b64e32d5.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +17,34 @@
 <body>
     <div id="main-wrapper">
         <!--Section 1: Header Logo and Navigator-->
-        <header>
+        <header id="header_desktop">
             <div id="logo">
                 <img src="images/logo/Reservia.svg" />
             </div>
-            <nav>
+            <nav class="nav_bar_destop">
                 <ul id="nav_bar">
-                    <li><a href="#herbergement">Hébergements</a></li>
-                    <li><a href="#activity">Activités</a></li>
-                    <li><a id="inscrire" href="#"><span>S'inscrire</span></a></li>
+                    <li><a class="hover_blue" href="#herbergement">Hébergements</a></li>
+                    <li><a class="hover_blue" href="#activity">Activités</a></li>
+                    <li><a class="inscrire" href="#"><span>S'inscrire</span></a></li>
                 </ul>
             </nav>
         </header>
+        <header id="header_mobile">
+            <div class="top">
+                <img src="images/logo/Reservia.svg" />
+                <div class="nav_bar_mobile">
+                <a class="inscrire" href="#"><span>S'inscrire</span>
+                </div>
+            </div>
+            <nav id="nav_link">              
+                <ul id="nav_bar">
+                    <li><a href="#herbergement">Hébergements</a></li>
+                    <li><a href="#activity">Activités</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        
         <!--Section 2: Search-->
         <div id="search_text">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
@@ -33,8 +53,9 @@
         <!--Section 3: search_icon-->
         <form class="search_button" action="action_page.php">
             <i id="map_icon" class="fas fa-map-marker-alt fa-lg"></i>
-            <input class="input_field" type="text" value="Marseille, France">
+            <input class="input_field" type="text" placeholder="Marseille, France" aria-label="delete">
             <button type="submit" class="submit_button">Rechercher</button>
+            <button type="submit" class="submit_button_mobile"><i class="fas fa-search fa-lg"></i></button>
         </form>
         <!--Section 4: Filters-->
         <div class="filter_container">
@@ -79,7 +100,7 @@
                 <div class="hotel_container">
                     <!--Hotel Auberge la Cannebière-->
                     <div class="hotel_marseille">
-                        <a href="#herbergement">
+                        <a href="#herbergement" class="test">
                             <div class="hotel_pic_box">
                                 <img class="hotel_pic" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg " alt="Hotel Auberge la Cannebière " />
                             </div>

@@ -5,17 +5,19 @@
 }
 
 * {
-    font-family: raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: normal;
     color: black;
 }
 
 ul {
     list-style-type: none;
+   
 }
 
 a {
     text-decoration: none;
+    
 }
 
 li a {
@@ -23,7 +25,7 @@ li a {
 }
 
 #main-wrapper {
-    margin: auto;
+    margin: 0 auto 0 auto;
     max-width: 95%;
 }
 
@@ -50,14 +52,19 @@ header {
     text-align: center;
 }
 
-nav a span {
+.inscrire span {
     color: var(--blue);
     font-weight: bold;
 }
 
-#nav_bar li a:hover {
+ .hover_blue:hover {
     color: var(--blue);
     border-top: var(--blue) solid 2px;
+}
+.inscrire span:hover {
+    color: red;
+  
+   
 }
 
 #search_text h2 {
@@ -65,20 +72,34 @@ nav a span {
     margin-bottom: 0px;
 }
 
+#header_mobile{
+    display: none;
+}
 
 /*--section 3 search_icon --*/
-
+.icon{
+    font-size: 2px;
+}
 button.submit_button {
     background-color: var(--blue);
     border: solid 1px var(--blue);
     border-radius: 0 20px 20px 0;
     color: white;
-    height: 54px;
     width: 150px;
     font-size: 1em;
     font-weight: bold;
 }
+button.submit_button:hover{
+    background-color: var(--lightblue);
+    border :  solid 1px var(--light-blue);
+    color : var(--blue);
+    font-size : 1.1em;
+    font-weight : bolder;
+} 
 
+.submit_button_mobile{
+    display: none;
+}
 .input_field {
     height: 50px;
     border: solid 1px var(--gray);
@@ -103,7 +124,6 @@ form.search_button {
     display: inline-flex;
     cursor: hand;
 }
-
 
 /*-- Section 4 --*/
 
@@ -254,6 +274,11 @@ div.hotel_container {
     margin-top: 0;
 }
 
+ a.test:hover{
+    color : var(--blue);
+    
+}
+
 div.hotel_marseille {
     display: flex;
     width: 225px;
@@ -315,17 +340,6 @@ div.star {
 
 
 /*--Section 6: Aside -Les plus populaires--*/
-
-#aside_wrapper {
-    width: 32%;
-    background-color: var(--gray);
-    height: auto;
-    border-radius: 20px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 div.aside_container {
     display: flex;
     flex-direction: column;
@@ -338,12 +352,23 @@ div.aside_container {
     padding-top: 0;
 }
 
+#aside_wrapper {
+    width: 32%;
+    background-color: var(--gray);
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 ul#aside_header {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5vh;
+    
     margin-right: 5vh;
 }
 
@@ -588,9 +613,10 @@ footer {
 
 /**-----@medie queries section --*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     body {
         margin: auto;
+        width : 80%;
     }
 }
 
@@ -599,4 +625,35 @@ footer {
         max-width: 100%;
         margin: auto;
     }
+    .submit_button_mobile{
+     display: block;
+        background-color: var(--blue);
+        border: solid 1px var(--blue);
+        border-radius: 10px 10px 10px 10px;
+        width: 50px;
+        font-weight: bold;    
+        margin-left: -2vw;
+    }
+    .submit_button_mobile i{color :white;}
+    
+    .submit_button{
+        display: none;
+    }
+    /*--deactivate header-desktop--*/
+    #header_desktop{
+        display : none;
+    }
+    .top{
+        display : flex;
+        flex-direction : column;
+    }
+#nav_link{
+    display: flex;
+    flex-direction : row;
+    justify-content : space-between;
+}
+.top{
+    display : flex;
+    flex-direction : row;
+}
 }
