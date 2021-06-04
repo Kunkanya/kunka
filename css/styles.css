@@ -1,9 +1,17 @@
+@import url('css/fonts.css');
+
+
+/*--------x-----Global Classes---x-------*/
 :root {
     --blue: #0065fc;
     --lightblue: #deebff;
     --gray: #f2f2f2;
 }
-
+html body {
+    margin :0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 * {
     font-family: "Raleway", sans-serif;
     font-weight: normal;
@@ -12,22 +20,22 @@
 
 ul {
     list-style-type: none;
-   
 }
 
 a {
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 
 li a {
     text-decoration: none;
 }
+/*--------x-----Global Classes---x-------*/
+
+/*-------Section 1 : nav logo header-------*/
 
 #main-wrapper {
     margin: auto;
     padding : 20px;
-   
 }
 
 header {
@@ -63,10 +71,9 @@ header {
     border-top: var(--blue) solid 2px;
 }
 .inscrire span:hover {
-    color: red;
-  
-   
+    color: red;   
 }
+/*---------x----Section 1- nav - logo- header----x----------*/
 
 #search_text h2 {
     font-weight: bolder;
