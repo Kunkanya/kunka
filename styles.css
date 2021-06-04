@@ -127,12 +127,13 @@ form.search_button {
     cursor: hand;
 }
 
-/*-- Section 4 --*/
+/*-- Section 4 Filtres--*/
 
 .filter_icon {
     display: inline-flex;
     margin-right: 10px;
     margin-left: 25px;
+   
 }
 
 p span {
@@ -151,6 +152,9 @@ p span {
     position: absolute;
 }
 
+.filter_link {
+    margin-right : 2vw;
+}
 .filter_name {
     display: flex;
     align-items: center;
@@ -217,7 +221,7 @@ p span {
 
 /*-- contaier for section 5 + 6 --*/
 
-main.container {
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -233,16 +237,11 @@ main.container {
     border-radius: 20px 20px 20px 20px;
 }
 
-div#header_text {
-    height: 12vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 4vh;
-    margin-bottom: 0vh;
-    padding-bottom: 0vh;
-    padding-right: 4vh;
+#header_text {
+    height: 16vh;
+    display:flex;
+    align-items : flex-end;
+    
 }
 
 div#section_foot_text {
@@ -295,7 +294,7 @@ figure img {
 
 figure:hover {
     transition : 0.3s;
-    opacity: 0.6;
+    opacity: 0.8;
     box-shadow:  0 4px 20px 0 rgba(68, 68, 68, 0.5);
      }
 
@@ -377,7 +376,7 @@ figure.aside_hotel_card {
 }
 
 .fig_aside{
-    width :340px;
+    width :330px;
     height : 140px;
     border : white solid 5px;
     margin-top : 0;
@@ -400,7 +399,7 @@ padding: 1em 3em 0 0;
 }
 .aside_hotel_card:hover {
     transition : 0.3s;
-    opacity: 0.6;
+    opacity: 0.8;
     box-shadow:  0 4px 20px 0 rgba(68, 68, 68, 0.5);
      }
 
@@ -414,165 +413,112 @@ h2 span {
     margin-top: 10vh;
 }
 
-div.activity_card_container {
+.activity_card_container {
     display: grid;
     height: 450px;
-    grid-gap: 1.7rem;
-    grid-template-areas: "card1 card2 card4 card5" "card1 card3 card4 card6";
+    grid-template-areas:    "card1 card2 card4 card5" 
+                            "card1 card2 card4 card5" 
+                            "card1 card3 card4 card6";
 }
 
 .card:hover {
     transition : 0.3s;
-    opacity: 0.6;
+    opacity: 0.8;
     box-shadow:  0 4px 20px 0 rgba(68, 68, 68, 0.5);
      }
-#card_1 {
-    grid-area: card1;
-}
-
-#card_2 {
-    grid-area: card2;
-}
-
-#card_3 {
-    grid-area: card3;
-    margin-top: 2rem;
-}
-
-#card_4 {
-    grid-area: card4;
-}
-
-#card_5 {
-    grid-area: card5;
-}
-
-#card_6 {
-    grid-area: card6;
-    margin-top: -0.4rem;
-}
-
 
 /*--card 1--*/
-
 #card_1 {
+    grid-area: card1;
     height: 450px;
     width: 300px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
-
-div.activity_card_box_1 {
+#card_1 img{
     height: 400px;
-    overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    object-fit : cover;   
 }
-
-img.activity_card_pic_1 {
-    max-height: 100%;
-    margin-left: -10vw;
-}
-
-
 /*--card 2--*/
-
 #card_2 {
+    grid-area: card2;
     height: 230px;
     width: 300px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
 
-div.activity_card_box_2 {
+#card_2 img{
     height: 180px;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
+    object-fit : cover;   
 }
-
-img.activity_card_pic_2 {
-    max-width: 100%;
-    margin-top: -18vh;
-}
-
 
 /*--card 3--*/
 
 #card_3 {
+    grid-area: card3;
     height: 160px;
     width: 300px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
-
-div.activity_card_box_3 {
+#card_3 img{
     height: 110px;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
-}
-
-img.activity_card_pic_3 {
-    max-width: 100%;
-    margin-top: -4vh;
+    object-fit : cover;   
 }
 
 
 /*--card 4--*/
 
 #card_4 {
+    grid-area: card4;
     height: 450px;
     width: 300px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
 
+#card_4 img{
+    height: 400px;
+    object-fit : cover;   
+}
 
 /*--card 5--*/
 
 #card_5 {
+    grid-area: card5;
     height: 190px;
     width: 300px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
-
-div.activity_card_box_5 {
+#card_5 img{
     height: 140px;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
+    object-fit : cover;   
 }
-
-img.activity_card_pic_5 {
-    max-width: 100%;
-    margin-top: -1vh;
-}
-
-
 /*--card 6--*/
 #card_6 {
-    height: 200px;
+    grid-area: card6;    height: 200px;
     width: 300px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
-
-div.activity_card_box_6 {
+#card_6 img{
     height: 150px;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
+    object-fit : cover;   
 }
 
-img.activity_card_pic_6 {
-    max-width: 100%;
-    margin-top: -1vh;
-}
-
-div.activity_text p span {
+.activity_text p span {
     height: 150px;
     font-weight: bold;
     padding-top: 3vw;
     padding-left: 1.5vw;
 }
+.card {
+    border : none;
+}
 
+/*--section 8 Footer--*/
 footer {
     margin-top: 4rem;
     background-color: var(--gray);
@@ -592,7 +538,7 @@ footer {
 }
 
 .footer a:hover{
-    color : var(--blue);
+color : var(--blue);
 transition : 0.3s;
 font-weight : bold;
 }

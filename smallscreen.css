@@ -1,8 +1,9 @@
 /* -- Media queries for mobile --*/
 @media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
   #main-wrapper {
-    margin: auto;
-    padding: 1vw;
+    margin: 0;
+    height : auto;
+  /**  padding: 5vw;**/
   }
   .submit_button_mobile {
     display: block;
@@ -33,7 +34,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 0 20px;
+    padding: 1em 0 0 0;
   }
   .inscrire {
     text-align: right;
@@ -58,38 +59,76 @@
   .hover_blue_mobile:hover {
     color: var(--blue);
   }
-  .filter_container:nth-child(n + 2) {
+
+  .filter_container{
+    display : flex;
+    flex-direction : column;
+  }
+  .filter_icon{
     display: flex;
     flex-flow: row wrap;
+    margin-left:0;
+    
   }
-  /*--section herbergement à marseille--*/
+  /*--section 5 herbergement à marseille--*/
   main.container {
     display: flex;
     flex-direction: column-reverse;
   }
+  
+  #aside_wrapper { 
+    width : 100%;
+    border-radius : 0 ;
+  }
+
+  #aside_header{
+    padding-left :0 !important ;
+    padding-right : 0;
+  }
+  .fig_aside{
+    margin-bottom : 2vh;
+    width : 300px;
+
+  }
+  .figcap_aside {
+    padding : 0.5em 0 0 0;
+    margin-right : 1em;
+  }
+ .fig_herbergement{
+   width : 330px;
+   margin-bottom : 1em;
+ }
+#herbergement{
+  width : 100%;
+  background-color : white;
+}
   .hotel_container {
     display: flex;
     flex-direction: column;
   }
-  #aside_wrapper {
-    width: 100%;
-  }
-  a.aside_hotel_card {
   
-	width : 90%;
+  #header_text{
+    font-size :medium ;
   }
-  #herbergement{
-	  width : 100%;
-	  background-color : white;
+  /*-- section 7 activity--*/
+  .activity_card_container{
+    display : flex;
+    flex-direction : column;
   }
-  div.hotel_marseille{
-	background-color : yellow;
-	width : 100%;
-	height : auto;
 
+  figure.card{
+    width : 330px;
+    height : 190px; 
   }
-  .hotel_pic_box img{
-	  display : block;
-	  width : 100%;
+  .card img{
+    height : 130px !important;
+  }
+  footer{
+    display: flex;
+    flex-direction : column;
+  }
+  .footer{
+padding :1em;
+margin : 0;
   }
 }

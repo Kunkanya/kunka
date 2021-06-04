@@ -73,39 +73,35 @@
           <i class="fas fa-search fa-lg"></i>
         </button>
       </form>
-      <!--Section 4: Filters-->
+      <!--Section 4: Filtres-->
       <div class="filter_container">
         <p><span>Filtres</span></p>
         <div class="filter_icon">
-          <a href="#">
+          <a href="#" class ="filter_link">
             <i class="fas fa-money-bill-wave fa-lg"></i>
             <p class="filter_name" id="eco_icon">Économique</p>
           </a>
-        </div>
-        <div class="filter_icon">
-          <a href="#">
+          <a href="#" class ="filter_link">
             <i class="fas fa-child fa-lg"></i>
             <p class="filter_name" id="fam_icon">Familial</p>
-          </a>
-        </div>
-        <div class="filter_icon">
-          <a href="#">
+          </a>        
+          <a href="#" class ="filter_link">
             <i class="fas fa-heart fa-lg"></i>
             <p class="filter_name" id="rom_icon">Romantique</p>
           </a>
-        </div>
-        <div class="filter_icon">
-          <a href="#">
+          <a href="#" class ="filter_link">
             <i class="fas fa-dog fa-lg"></i>
             <p class="filter_name" id="ani_icon">Animaux autorisés</p>
           </a>
-        </div>
       </div>
+      </div>
+    
       <div class="info">
         <i class="fas fa-info fa-xs"></i>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
         <p></p>
       </div>
+      
 
       <main class="container">
         <!--Section 5: Hébergement à Marseille-->
@@ -115,7 +111,7 @@
           </div>
           <div class="hotel_container">
             <!--Hotel Auberge la Cannebière-->
-            <figure>
+            <figure class="fig_herbergement">
               <a href="#herbergement">
                   <img
                     class="hotel_pic"
@@ -137,7 +133,7 @@
             </figure>
 
             <!--Hôtel du port-->
-            <figure>
+            <figure class="fig_herbergement">
               <a href="#herbergement">
                   <img
                     class="hotel_pic"
@@ -159,7 +155,7 @@
             </figure>
 
             <!--Hôtel les mouettes-->
-            <figure>
+            <figure class="fig_herbergement">
               <a href="#herbergement">
                   <img
                     class="hotel_pic"
@@ -181,7 +177,7 @@
             </figure>
 
             <!--Hôtel de la mer-->
-            <figure>
+            <figure class="fig_herbergement">
               <a href="#herbergement">
                   <img
                     class="hotel_pic"
@@ -203,7 +199,7 @@
               </a>
             </figure>
             <!--Auberge Le Panire-->
-            <figure>
+            <figure class="fig_herbergement">
               <a href="#herbergement">
                   <img
                     class="hotel_pic"
@@ -224,7 +220,7 @@
               </a>
             </figure>
             <!--Hôtel chez Amina-->
-            <figure>
+            <figure class="fig_herbergement">
               <a href="#herbergement">
                 <img
                   class="hotel_pic"
@@ -243,7 +239,7 @@
                   </div>
                 </figcaption>
               </a>
-            </figure>
+            </figure class="fig_herbergement">
           </div>
           <div id="section_foot_text">
             <a href="#herbergement"
@@ -263,24 +259,23 @@
           </ul>
 
           <div class="aside_container">
-<!--Hôtel Le soleil du matin-->
-<figure class="fig_aside">
-    <a href="#aside_wrapper">
-        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
-        <figcaption class="figcap_aside">
-            <p class="hotel_name"><span>Hôtel Le soleil <br> du matin</span></p>
-            <p class="text_price">Nuit à partir de 128<span>€</span></p>
-            <div class="aside_star">
-                <i class="fas fa-star fa-xs checked"></i>
-                <i class="fas fa-star fa-xs checked"></i>
-                <i class="fas fa-star fa-xs checked"></i>
-                <i class="fas fa-star fa-xs checked"></i>
-                <i class="fas fa-star fa-xs checked"></i>
-            </div>
-        </figcaption>
-    </a>
-</figure>
-  
+            <!--Hôtel Le soleil du matin-->
+            <figure class="fig_aside">
+                <a href="#aside_wrapper">
+                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
+                    <figcaption class="figcap_aside">
+                        <p class="hotel_name"><span>Hôtel Le soleil <br> du matin</span></p>
+                        <p class="text_price">Nuit à partir de 128<span>€</span></p>
+                        <div class="aside_star">
+                            <i class="fas fa-star fa-xs checked"></i>
+                            <i class="fas fa-star fa-xs checked"></i>
+                            <i class="fas fa-star fa-xs checked"></i>
+                            <i class="fas fa-star fa-xs checked"></i>
+                            <i class="fas fa-star fa-xs checked"></i>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>  
             <!--Au cœur de l'eau Chambres d'hôtes-->
             <figure class="fig_aside">
             <a href="#aside_wrapper" >
@@ -328,97 +323,75 @@
         </h2>
         <div class="activity_card_container">
           <!--Vieux Port-->
-          <div class="card" id="card_1">
-            <a href="#activity" class="activity_card">
-              <div class="activity_card_box_1">
-                <img
-                  class="activity_card_pic_1"
-                  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg "
+          <figure class="card" id="card_1">
+            <a href="#activity" >
+                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg "
                   alt="Photo of vieux port "
                 />
-              </div>
-              <div class="activity_text">
+              <fig_caption class="activity_text">
                 <p><span>Vieux Port</span></p>
-              </div>
+              </fig_caption>
             </a>
-          </div>
+          </figure>
+
           <!--Fort de Pomègues-->
-          <div class="card" id="card_2">
-            <a href="#activity" class="activity_card">
-              <div class="activity_card_box_2">
-                <img
-                  class="activity_card_pic_2"
-                  src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg "
+          <figure class="card" id="card_2">
+            <a href="#activity">
+                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg "
                   alt="Fort de Pomègues "
                 />
-              </div>
-              <div class="activity_text">
+              <fig_caption class="activity_text">
                 <p><span>Fort de Pomègues</span></p>
-              </div>
+              </fig_caption>
             </a>
-          </div>
+          </figure>
           <!--Îles du Frioul-->
-          <div class="card" id="card_3">
-            <a href="#activity" class="activity_card">
-              <div class="activity_card_box_3">
+          <figure class="card" id="card_3">
+            <a href="#activity">
                 <img
-                  class="activity_card_pic_3"
                   src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg "
                   alt="Îles du Frioul "
                 />
-              </div>
-              <div class="activity_text">
+              <fig_caption class="activity_text">
                 <p><span>Îles du Frioul</span></p>
-              </div>
+              </fig_caption>
             </a>
-          </div>
+          </figure>
           <!--Parc National des Calanques-->
-          <div class="card" id="card_4">
-            <a href="#activity" class="activity_card">
-              <div class="activity_card_box_1">
-                <img
-                  class="activity_card_pic_1"
-                  src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg "
+          <figure class="card" id="card_4">
+            <a href="#activity" >
+                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg "
                   alt="Parc National des Calanques "
                 />
-              </div>
-              <div class="activity_text">
+              <fig_caption class="activity_text">
                 <p><span>Parc National des Calanques</span></p>
-              </div>
+              </fig_caption>
             </a>
-          </div>
+          </figure>
           <!--Notre-Dame-de-la-Garde-->
-          <div class="card" id="card_5">
-            <a href="#activity" class="activity_card">
-              <div class="activity_card_box_5">
-                <img
-                  class="activity_card_pic_5"
-                  src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg "
+          <figure class="card" id="card_5">
+            <a href="#activity">
+              <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg "
                   alt="Notre-Dame-de-la-Garde "
                 />
-              </div>
-              <div class="activity_text">
+              <fig_caption class="activity_text">
                 <p><span>Notre-Dame-de-la-Garde</span></p>
-              </div>
+              </fig_caption>
             </a>
-          </div>
+          </figure>
           <!--Parc Longchamp-->
-          <div class="card" id="card_6">
-            <a href="#activity" class="activity_card">
-              <div class="activity_card_box_6">
-                <img
-                  class="activity_card_pic_6"
-                  src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg "
+          <figure class="card" id="card_6">
+            <a href="#activity">
+              <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg "
                   alt="Parc Longchamp "
                 />
-              </div>
-              <div class="activity_text">
+              <fig_caption class="activity_text">
                 <p><span>Parc Longchamp</span></p>
-              </div>
+              </fig_caption>
             </a>
-          </div>
+          </figure>
         </div>
-      </section>
+      </section>  
     </div>
     <!--Section 8: Footer-->
     <footer>
@@ -446,5 +419,6 @@
         </ul>
       </div>
     </footer>
+  
   </body>
 </html>
