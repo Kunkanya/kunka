@@ -1,5 +1,7 @@
-@import url('css/fonts.css');
-
+@font-face{
+    font-family : 'Raleway' ,sans-serif;
+    src: url('font/static/Raleway-Regular.ttf')
+   }
 
 /*--------x-----Global Classes---x-------*/
 :root {
@@ -16,6 +18,7 @@ html body {
     font-family: "Raleway", sans-serif;
     font-weight: normal;
     color: black;
+   
 }
 
 ul {
@@ -35,7 +38,7 @@ li a {
 
 #main-wrapper {
     margin: auto;
-    padding : 20px;
+    padding : 0 2.5rem ;
 }
 
 header {
@@ -230,32 +233,32 @@ p span {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     justify-content: space-between;
-    max-width: 100%;
+  
 }
 
 
 /*--Section 5: Hébergement à Marseille--*/
 
 #herbergement {
-    width: 65%;
+   
     background-color: var(--gray);
     border-radius: 20px 20px 20px 20px;
+    margin-right : 2rem;
 }
 
 #header_text {
-    height: 16vh;
     display:flex;
     align-items : flex-end;
-    
+    margin-top: 5vh;
 }
 
 div#section_foot_text {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    height: 12vh;
+  
     padding-top: 0vh;
     margin-top: 0vh;
     font-weight: bolder;
@@ -275,13 +278,11 @@ div#section_foot_text p span {
 div.hotel_container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    max-width: 100%;
-    height : 500px;
-    padding: 0 1.2vw 0 1.2vw;
+    justify-content: space-evenly;
+    padding: 0 1rem ;
     
 }
-figure{
+.fig_herbergement{
     border : solid 1px white;
     background-color : white;
     width : 240px;
@@ -290,22 +291,22 @@ figure{
     border-radius: 20px 20px ;
     border : 5px solid white;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
-    margin :0;
+   margin :0 0.5rem 1rem 0.5rem;
 }
 
-figure img {
+.fig_herbergement img {
     width: 100%;
     height : 115px;
     object-fit :cover;
 }
 
-figure:hover {
+.fig_herbergement:hover {
     transition : 0.3s;
     opacity: 0.8;
     box-shadow:  0 4px 20px 0 rgba(68, 68, 68, 0.5);
      }
 
-figcaption{
+.figcaption{
          padding : 0.5em;
      }
 p.hotel_name {
@@ -329,27 +330,24 @@ p.text_price {
 }
 
 /*--Section 6: Aside -Les plus populaires--*/
-div.aside_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height :100%;
-    margin-top :0;
-    padding-top : 0;
-    margin-bottom: 7vh;
-
-}
 
 #aside_wrapper {
-    width: 32%;
+    
     background-color: var(--gray);
     border-radius: 20px 20px 20px 20px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
+    margin-top : 0 ;
+    padding-top : 0 1rem 1rem 1rem;
+}
+
+.aside_container {
+    display: flex;
+    flex-flow: column ;
+    align-items: flex-start;
     margin-top : 0;
-    padding-top : 0;
+    padding :  0 2rem;
 }
 
 ul#aside_header {
@@ -357,10 +355,9 @@ ul#aside_header {
     display: flex;
     justify-content: space-between;
     align-items : center;
-    height : 12vh;
-    padding : 2em 2em 0 2em;
-    margin: 0;
-   
+
+    padding : 0 2em 0 2em;
+    margin: 5vh 0 0 0 ;   
 }
 
 ul#aside_header h1 span {
@@ -371,28 +368,25 @@ ul#aside_header li {
     text-decoration: none;
 }
 
-figure.aside_hotel_card {
-    display: inline-flex;
-    flex-direction: row;
-    width: 340px;
-    height: 140px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    border: solid white 5px;
-    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
-}
 
 .fig_aside{
     width :330px;
     height : 140px;
     border : white solid 5px;
+    border-radius : 20px 20px 20px 20px;
     margin-top : 0;
+    overflow:hidden;
+    background-color : white;
+    margin-bottom : 2rem;
 }
 
 .fig_aside img{
     width :125px;
-    height : 100%;
+    height:100% ;
+    max-height : 100%;
     margin-right : 0;
+    object-fit : cover;
+
 }
 
 .figcap_aside{
@@ -404,7 +398,7 @@ padding: 1em 3em 0 0;
 .aside_star{
     margin-top : 2em;
 }
-.aside_hotel_card:hover {
+.fig_aside:hover {
     transition : 0.3s;
     opacity: 0.8;
     box-shadow:  0 4px 20px 0 rgba(68, 68, 68, 0.5);
@@ -422,12 +416,28 @@ h2 span {
 
 .activity_card_container {
     display: grid;
-    height: 450px;
-    grid-template-areas:    "card1 card2 card4 card5" 
-                            "card1 card2 card4 card5" 
-                            "card1 card3 card4 card6";
+    grid-template-columns: repeat(4 x 1fr);
+    grid-template-rows: 195px 40px 40px 170px;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-auto-flow:auto;
+    box-sizing : border-box;
+  
+}
+figure.card{
+    box-sizing: border-box;
+    border-radius: 20px  20px  20px 20px ;
+    overflow :hidden;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+    margin: auto;
 }
 
+figure.card img{
+   width : 100%;
+    border-radius: 20px  20px  0 0 ;
+    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+    object-fit  :cover;
+}
 .card:hover {
     transition : 0.3s;
     opacity: 0.8;
@@ -436,41 +446,37 @@ h2 span {
 
 /*--card 1--*/
 #card_1 {
-    grid-area: card1;
-    height: 450px;
-    width: 300px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+    grid-column : 1/2;
+    height: 445px;
+    width : 300px;
 }
 #card_1 img{
-    height: 400px;
+    height: 395px;
     object-fit : cover;   
 }
 /*--card 2--*/
 #card_2 {
-    grid-area: card2;
-    height: 230px;
+    grid-column : 2/3;   
+    height: 235px;
     width: 300px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
 
 #card_2 img{
-    height: 180px;
+    height: 185px;
     object-fit : cover;   
 }
 
 /*--card 3--*/
 
 #card_3 {
-    grid-area: card3;
-    height: 160px;
+    grid-column : 2/3;
+    grid-row: 4/5;
+    height: 170px;
     width: 300px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
+    
 }
 #card_3 img{
-    height: 110px;
+    height: 120px;
     object-fit : cover;   
 }
 
@@ -478,26 +484,22 @@ h2 span {
 /*--card 4--*/
 
 #card_4 {
-    grid-area: card4;
-    height: 450px;
+    grid-column: 3/4;
+    height: 445px;
     width: 300px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
 
 #card_4 img{
-    height: 400px;
+    height:395px;
     object-fit : cover;   
 }
 
 /*--card 5--*/
 
 #card_5 {
-    grid-area: card5;
-    height: 190px;
+    grid-column : 4/5;
+    height: 195px;
     width: 300px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
 #card_5 img{
     height: 140px;
@@ -505,13 +507,13 @@ h2 span {
 }
 /*--card 6--*/
 #card_6 {
-    grid-area: card6;    height: 200px;
+    grid-column : 4/5;
+    grid-row: 3/5;
+    height: 210px;
     width: 300px;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
 }
 #card_6 img{
-    height: 150px;
+    height: 160px;
     object-fit : cover;   
 }
 
@@ -531,8 +533,8 @@ footer {
     background-color: var(--gray);
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: space-between;
+    max-width: 100%;
 }
 
 .footer li:first-child {
@@ -546,12 +548,13 @@ footer {
 
 .footer a:hover{
 color : var(--blue);
+margin-left : 0.3rem;
 transition : 0.3s;
 font-weight : bold;
 }
 
 .footer {
-    padding: 0 14rem 3rem 2rem;
+    padding:0  2rem 0 2rem;
 }
 
 
@@ -563,4 +566,7 @@ font-weight : bold;
         margin: auto;
         width : 80%;
     }
-}
+}/**-----@medie queries section --*/
+
+
+
