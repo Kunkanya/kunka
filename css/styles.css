@@ -1,8 +1,7 @@
 @font-face{
-    font-family : 'Raleway' ,sans-serif;
-    src: url('font/static/Raleway-Regular.ttf')
+    font-family : 'Raleway';
+    src: url('../font/static/Raleway-Regular.ttf')
    }
-
 /*--------x-----Global Classes---x-------*/
 :root {
     --blue: #0065fc;
@@ -17,8 +16,7 @@ html body {
 * {
     font-family: "Raleway", sans-serif;
     font-weight: normal;
-    color: black;
-   
+    color: black; 
 }
 
 ul {
@@ -134,7 +132,7 @@ button.submit_button:hover{
 
 form.search_button {
     display: inline-flex;
-    cursor: hand;
+    cursor: pointer;
 }
 
 /*-- Section 4 Filtres--*/
@@ -264,7 +262,7 @@ div#section_foot_text {
     font-weight: bolder;
 }
 
-div#header_text h1 span {
+#header_text h2 span {
     font-weight: bold;
     padding-left: 2.5vw;
 }
@@ -283,7 +281,6 @@ div.hotel_container {
     
 }
 .fig_herbergement{
-    border : solid 1px white;
     background-color : white;
     width : 240px;
     height: 200px;
@@ -291,7 +288,7 @@ div.hotel_container {
     border-radius: 20px 20px ;
     border : 5px solid white;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
-   margin :0 0.5rem 1rem 0.5rem;
+    margin :0 0.5rem 1rem 0.5rem;
 }
 
 .fig_herbergement img {
@@ -332,14 +329,14 @@ p.text_price {
 /*--Section 6: Aside -Les plus populaires--*/
 
 #aside_wrapper {
-    
     background-color: var(--gray);
     border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: flex-start;
     margin-top : 0 ;
-    padding-top : 0 1rem 1rem 1rem;
+    padding-top : 0 ;
 }
 
 .aside_container {
@@ -352,12 +349,14 @@ p.text_price {
 
 ul#aside_header {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items : center;
-
-    padding : 0 2em 0 2em;
-    margin: 5vh 0 0 0 ;   
+display: flex;
+flex-direction : row;
+align-items: center;
+width : 80%;
+justify-content : space-between;
+      padding : 0 2em 0 2em;
+    margin: 5vh 0 0 0 ; 
+ 
 }
 
 ul#aside_header h1 span {
@@ -416,11 +415,10 @@ h2 span {
 
 .activity_card_container {
     display: grid;
-    grid-template-columns: repeat(4 x 1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: 195px 40px 40px 170px;
     grid-auto-columns: auto;
     grid-auto-rows: auto;
-    grid-auto-flow:auto;
     box-sizing : border-box;
   
 }
