@@ -34,25 +34,29 @@
   .submit_button {
     display: none;
   }
-  /*--deactivate header-desktop--*/
+  /*--deactivated header-desktop--*/
   #header_desktop {
     display: none;
   }
+  /*--activated header-mobile--*/
   #header_mobile {
     display: block;
   }
 
+  /*--Header section--*/
   .top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0 0 0;
+    padding: 1.5rem 1.5rem  0 1.5rem;
   }
+
   .inscrire {
     text-align: right;
   }
 
+  /*--navigation section--*/
   #nav_bar_mobile {
     margin: 20px 0 20px 0;
     padding: 0;
@@ -60,19 +64,20 @@
     justify-content: space-around;
   }
 
-  li.test {
+  li.nav_box {
     padding: 20px;
     width: 40%;
     border-bottom: solid 2px var(--gray);
     text-align: center;
   }
-  .test:hover {
+  .nav_box:hover {
     border-bottom: solid 2px var(--blue);
   }
   .hover_blue_mobile:hover {
     color: var(--blue);
   }
 
+/*--Section 4 Filtres--*/  
   .filter_container{
     display : flex;
     flex-direction : column;
@@ -89,12 +94,13 @@
     flex-direction: column-reverse;
   }
   
+  /*section 6 : aside--*/
   #aside_wrapper { 
-    margin : 0;
     border-radius : 0;
+    padding-bottom : 4rem;
     display: flex;
     flex-direction : column;
-    width: fit-content;
+    justify-content: center;
     height : fit-content;
     align-items: flex-start;
   }
@@ -117,6 +123,7 @@
   margin-left : 20vw;
   }
 
+  /*--Section 4 : herbergement--*/
  .fig_herbergement{
    width : 320px;
    margin-bottom : 1em;
@@ -155,6 +162,8 @@
   .card img{
     height : 130px !important;
   }
+
+  /*--Footer--*/
   footer{
     display: flex;
     flex-direction : column;
@@ -168,9 +177,6 @@
 
   .assistance{
     margin-bottom : 3rem;
-  }
-  .top{
-    padding : 1.5rem 1.5rem  0 1.5rem;
   }
  
 }
