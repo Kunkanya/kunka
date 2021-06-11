@@ -432,7 +432,7 @@ figure.card{
 
 figure.card img{
     width : 100%;
-    min-width : 50%;
+   
     border-radius: 20px  20px  0 0 ;
     box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
     object-fit  :cover;
