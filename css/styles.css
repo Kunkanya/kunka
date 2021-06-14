@@ -9,10 +9,13 @@
     --gray: #f2f2f2;
 }
 html body {
-    margin :0;
-    padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    margin-top: 0;
+    min-width : 100%;
+    margin-left :auto;
+    margin-right : auto;
+    padding : 0 2rem;
 }
 * {
     font-family: "Raleway", sans-serif;
@@ -36,8 +39,10 @@ li a {
 /*-------Section 1 : nav logo header-------*/
 
 #main-wrapper {
-    margin: auto;
-    padding : 0 2.5rem ;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding : 0 ;
 }
 
 header {
@@ -343,7 +348,7 @@ p.text_price {
     flex-flow: column ;
     align-items: flex-start;
     margin-top : 0;
-    padding :  0 2rem;
+    padding :  0 1rem;
 }
 
 ul#aside_header {
@@ -447,7 +452,8 @@ figure.card img{
 #card_1 {
     grid-column : 1/2;
     max-height: 445px;
-    max-width : 300px;
+    max-width : 18.75rem;
+    width:100%;
 }
 #card_1 img{
     height: 395px;
@@ -458,6 +464,8 @@ figure.card img{
     grid-column : 2/3;   
     max-height: 235px;
     max-width: 300px;
+    width: 100%;
+    
 }
 
 #card_2 img{
@@ -472,8 +480,8 @@ figure.card img{
     grid-row: 4/5;
     max-height: 170px;
     max-width: 300px;
-    
-}
+    width: 100%;
+    }
 #card_3 img{
     height: 120px;
     object-fit : cover;   
@@ -486,6 +494,7 @@ figure.card img{
     grid-column: 3/4;
     max-height: 445px;
     max-width: 300px;
+    width : 100%;
 }
 
 #card_4 img{
@@ -499,6 +508,7 @@ figure.card img{
     grid-column : 4/5;
     max-height: 195px;
    max-width: 300px;
+   width : 100%;
 }
 #card_5 img{
     height: 140px;
@@ -510,17 +520,19 @@ figure.card img{
     grid-row: 3/5;
     max-height: 210px;
     max-width: 300px;
+    width:100%;
 }
 #card_6 img{
     height: 160px;
     object-fit : cover;   
 }
 
-.activity_text p span {
+figcaption p span {
     height: 150px;
     font-weight: bold;
     padding-top: 3vw;
     padding-left: 1.5vw;
+    width: fit-content;
 }
 .card {
     border : none;
@@ -560,12 +572,13 @@ font-weight : bold;
 
 /**-----@medie queries section --*/
 
-@media screen and (min-width: 1460px) {
-    body{
+@media screen and (min-width: 1560px) {
+   html body{
         margin-right: auto;
         margin-left : auto;
-        width:80%;
-        max-width : 80%;
+    }
+    #main-wrapper{
+        width: 80%;    
     }
 }/**-----@medie queries section  tablet screen--*/
 
