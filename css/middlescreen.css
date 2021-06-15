@@ -42,46 +42,44 @@ html body{
     display: none;
   }
   /*--deactivated header-desktop--*/
-  #header_desktop {
-    display: flex;
-
-   }
-  /*--activated header-mobile--*/
-  #header_mobile {
-    display: none;
+  .inscrire{
+    display:none;
   }
 
-  /*--Header section--*/
-  .top {
-    display: flex;
+  .inscrire_mobile{
+    visibility : visible;
+  }
+
+  #logo{
+    display :flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1.5rem  0 1.5rem;
-  }
+    width : 100%;
 
-  .inscrire {
-    text-align: right;
   }
+  /*--Header section--*/
+#header_desktop{
+  display : flex;
+  flex-direction : column;
+}
+#nav_bar{
+  width : 100%;
+  display : inline-block;
+}
 
   /*--navigation section--*/
-  #nav_bar_mobile {
-    margin: 20px 0 20px 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-  }
 
-  li.nav_box {
+  #nav_bar li{
     padding: 20px;
     width: 40%;
     border-bottom: solid 2px var(--gray);
     text-align: center;
   }
-  .nav_box:hover {
+  .nav_bar:hover {
     border-bottom: solid 2px var(--blue);
   }
-  .hover_blue_mobile:hover {
+  .hover_blue:hover {
     color: var(--blue);
   }
 

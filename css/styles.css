@@ -68,16 +68,24 @@ header {
     text-align: center;
 }
 
-.inscrire span {
+.inscrire  span {
     color: var(--blue);
     font-weight: bold;
+}
+.inscrire_mobile span {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.inscrire_mobile {
+visibility : hidden;
 }
 
  .hover_blue:hover {
     color: var(--blue);
     border-top: var(--blue) solid 2px;
 }
-.inscrire span:hover {
+.inscrire +.inscrire_mobile span:hover {
     color: red;   
 }
 /*---------x----Section 1- nav - logo- header----x----------*/
