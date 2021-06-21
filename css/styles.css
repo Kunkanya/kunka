@@ -12,10 +12,11 @@ html body {
   box-sizing: border-box;
   overflow-x: hidden;
   margin-top: 0;
+  padding: 0 1rem;
+
   min-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 2rem;
 }
 * {
   font-family: "Raleway", sans-serif;
@@ -33,6 +34,13 @@ a {
 
 li a {
   text-decoration: none;
+}
+h3{
+  font-weight: bold;
+}
+
+p span {
+  font-weight: bold;
 }
 /*--------x-----Global Classes---x-------*/
 
@@ -60,17 +68,19 @@ li a {
 }
 #nav_bar{
   margin-right: 1rem;
+  margin-top:0;
+  
 }
 #nav_bar li {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 #nav_bar li a {
   font-size: 1em;
   text-align: center;
+  margin-top:0;
 }
 
 .inscrire span {
@@ -80,6 +90,7 @@ li a {
 
 .hover_blue {
 padding: 2rem 2rem 0 2rem;
+border-top: solid 2px white;
 }
 
 .hover_blue:hover {
@@ -102,16 +113,12 @@ padding: 2rem 2rem 0 2rem;
 
 
 /*--section 3 search_icon --*/
-.icon {
-  font-size: 2px;
-}
 
 .submit_button {
   background-color: var(--blue);
   border: solid 1px var(--blue);
   border-radius: 0 20px 20px 0;
   width: 130px;
-
 }
 
 .submit_button span{
@@ -122,10 +129,11 @@ padding: 2rem 2rem 0 2rem;
 
 .submit_button:hover {
   background-color: var(--lightblue);
-  border: solid 1px var(--blue);
-  transition: 0.3s;
+  border: solid 2px var(--blue);
+  transition: 0.5s;
   font-size: 1.1em;
   font-weight: bolder;
+  color: var(--blue);
 }
 
 .submit_button span:hover {
@@ -139,18 +147,17 @@ color: var(--blue);
   border: solid 1px var(--gray);
   font-size: 1em;
   font-weight: bold;
-  cursor: auto;
   padding-left: 20px;
 }
 
 #map_icon {
   display: flex;
-  background-color: var(--gray);
-  border-radius: 20px 0 0 20px;
   justify-content: center;
   align-items: center;
+  background-color: var(--gray);
   border-radius: 20px 0 0 20px;
   width: 50px;
+  min-width: 30px;
   height: 54px;
 }
 
@@ -165,10 +172,6 @@ form.search_button {
   display: inline-flex;
   margin-right: 10px;
   margin-left: 25px;
-}
-
-p span {
-  font-weight: bold;
 }
 
 .filter_icon i {
@@ -186,42 +189,24 @@ p span {
 .filter_link {
   margin-right: 2vw;
 }
-.filter_name {
+.filter_link h4 {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   font-weight: bold;
   border: solid var(--gray) 2px;
   border-radius: 50px;
   margin-top: 0;
   position: relative;
+  padding-left: 50px;
   padding-right: 20px;
+  width : fit-content;
+  height :43px;
 }
 
 .filter_name:hover {
   color: var(--blue);
-  border: solid var(--blue) 1px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#eco_icon {
-  width: 150px;
-  height: 43px;
-}
-
-#fam_icon {
-  width: 120px;
-  height: 43px;
-}
-
-#rom_icon {
-  width: 150px;
-  height: 43px;
-}
-
-#ani_icon {
-  width: 200px;
-  height: 43px;
+  border: solid var(--blue) 2px;
+  transition : 0.5s;
 }
 
 .filter_container {
@@ -275,18 +260,17 @@ div#section_foot_text {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
-  padding-top: 0vh;
-  margin-top: 0vh;
+  padding-top: 0;
+  margin-top: 0;
   font-weight: bolder;
 }
 
-#header_text h2 span {
+#header_text h3  {
   font-weight: bold;
   padding-left: 2.5vw;
 }
 
-div#section_foot_text p span {
+#section_foot_text h3 {
   font-size: 1.2em;
   font-weight: bold;
   padding-left: 2.5vw;
@@ -296,7 +280,7 @@ div.hotel_container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding: 0 1rem;
+  padding: 0;
 }
 .fig_herbergement {
   background-color: white;
@@ -316,6 +300,7 @@ div.hotel_container {
 }
 
 .fig_herbergement:hover {
+  transform: scale(1.02);
   transition: 0.3s;
   opacity: 0.8;
   box-shadow: 0 4px 20px 0 rgba(68, 68, 68, 0.5);
@@ -324,10 +309,11 @@ div.hotel_container {
 .figcaption {
   padding: 0.5em;
 }
-p.hotel_name {
-  font-size: 1em;
+.hotel_name {
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 0.5em;
+
 }
 
 p.text_price {
@@ -352,8 +338,8 @@ p.text_price {
   flex-flow: column;
   align-items: flex-start;
   height: fit-content;
-  margin-top: 0;
-  padding-top: 0;
+  margin: 0;
+  padding: 0 1rem;
 }
 
 .aside_container {
@@ -361,26 +347,17 @@ p.text_price {
   flex-flow: column;
   align-items: flex-start;
   margin-top: 0;
-  padding: 0 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 
-ul#aside_header {
-  list-style-type: none;
+#aside_header {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 80%;
   justify-content: space-between;
-  padding: 0 2em 0 2em;
-  margin: 5vh 0 0 0;
-}
-
-ul#aside_header h1 span {
-  font-weight: bold;
-}
-
-ul#aside_header li {
-  text-decoration: none;
+  align-items: center;
+  width: 100%;
+  padding: 0;
 }
 
 .fig_aside {
@@ -392,8 +369,13 @@ ul#aside_header li {
   overflow: hidden;
   background-color: white;
   margin-bottom: 2rem;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
+.figcap_aside{
+  padding : 0 1rem;
+}
 .fig_aside img {
   width: 125px;
   max-width: 100%;
@@ -403,11 +385,6 @@ ul#aside_header li {
   object-fit: cover;
 }
 
-.figcap_aside {
-  float: right;
-  margin-left: 0;
-  padding: 1em 3em 0 0;
-}
 
 .aside_star {
   margin-top: 2em;
@@ -420,7 +397,7 @@ ul#aside_header li {
 
 /*--section 7: Activity --*/
 
-h2 span {
+h2 {
   font-weight: bold;
 }
 
@@ -456,6 +433,13 @@ figure.card img {
   transition: 0.3s;
   opacity: 0.8;
   box-shadow: 0 4px 20px 0 rgba(68, 68, 68, 0.5);
+}
+
+figcaption {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 1rem;
+  width: fit-content;
 }
 
 /*--card 1--*/
@@ -537,13 +521,6 @@ figure.card img {
   object-fit: cover;
 }
 
-figcaption p span {
-  height: 150px;
-  font-weight: bold;
-  padding-top: 3vw;
-  padding-left: 1.5vw;
-  width: fit-content;
-}
 
 .card {
   border: none;
@@ -570,9 +547,7 @@ footer {
 
 .footer a:hover {
   color: var(--blue);
-  margin-left: 0.3rem;
-  transition: 0.3s;
-  font-weight: bold;
+
 }
 
 .footer {

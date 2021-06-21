@@ -84,7 +84,9 @@
   .search_button span{
    display:none;
   }
-
+  .input_field{
+  width: 100%;
+}
   /*--navigation section--*/
   #nav_bar_mobile {
     margin: 20px 0 20px 0;
@@ -126,24 +128,15 @@
   #aside_wrapper {
     border-radius: 0;
     padding-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: fit-content;
-    align-items: flex-start;
   }
 
   .aside_container {
     padding: 0;
     margin: auto;
   }
-  .fig_aside {
-    margin-bottom: 2vh;
-    width: 320px;
-  }
+
   .figcap_aside {
-    padding-left: 0.2rem;
-    width: fit-content;
   }
 
   #aside_header {

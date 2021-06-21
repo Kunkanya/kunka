@@ -1,14 +1,15 @@
 /* -- Media queries for mobile --*/
-@media only screen and (max-width: 1010px) and (min-width: 600px) {
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
   html body {
     box-sizing: border-box;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
   }
 
   #main-wrapper {
-    margin: auto;
-    padding: 1rem 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding : 0;
     height: auto;
   }
 
@@ -26,10 +27,13 @@
   
   /*--section 1 navigation --*/
 
+#logo{
+  padding: 1rem;
+}
   #inscrire span{
     position: absolute;
-    top: 40px;
-    right : 40px;
+    top: 1.5rem;
+    right : 1rem;
   }
 
   nav.nav_bar_desktop{
@@ -87,39 +91,45 @@
   .container {
     display: flex;
     flex-flow: column-reverse wrap;
+
   }
 
   /*section 6 : aside--*/
-  #aside_wrapper {
-    border-radius: 0;
-    padding-bottom: 4rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    height: fit-content;
-    align-items: flex-start;
-    max-width: 100%;
-  }
+#aside_wrapper{
+  border-radius: 0;
+  margin:0;
+  padding:0;
+  width:100%;
+
+}
 
   .aside_container {
-    padding: 0;
-    margin: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+    border : solid red 1px;
+    
   }
-  .fig_aside {
+
+ #aside_header h3{
+  padding-left : 1rem;  
+}
+#aside_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#aside_header i{
+  padding-right : 1rem;  
+}
+
+ .fig_aside {
     margin-bottom: 2vh;
     max-width: 320px;
     width: 100%;
-  }
-  .figcap_aside {
-    padding-left: 0.2rem;
-    width: fit-content;
-  }
-
-  #aside_header {
-    margin-left: 20vw;
   }
 
   /*--Section 4 : herbergement--*/
