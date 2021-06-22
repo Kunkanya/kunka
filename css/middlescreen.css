@@ -1,5 +1,5 @@
 /* -- Media queries for mobile --*/
-@media only screen and (max-width: 1024px) and (min-width: 600px) {
+@media only screen and (max-width: 1040px) and (min-width: 680px) {
   html body {
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +23,6 @@
     padding-left: 1rem !important;
     padding-right: 1rem;
   }
-
   
   /*--section 1 navigation --*/
 
@@ -91,45 +90,38 @@
   .container {
     display: flex;
     flex-flow: column-reverse wrap;
-
   }
 
   /*section 6 : aside--*/
-#aside_wrapper{
+  #aside_wrapper{
   border-radius: 0;
   margin:0;
   padding:0;
   width:100%;
-
+  overflow: scroll;
 }
 
   .aside_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-auto-flow: row;
-    border : solid red 1px;
-    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
   }
 
- #aside_header h3{
-  padding-left : 1rem;  
-}
-#aside_header{
+  .fig_aside{
+    flex : 45%;
+    max-width: 45%;  
+  }
+
+  #aside_header{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-
-#aside_header i{
-  padding-right : 1rem;  
-}
-
- .fig_aside {
-    margin-bottom: 2vh;
-    max-width: 320px;
-    width: 100%;
+  align-items: center;  
+  width : calc(100% - 2rem);
+  margin-right: auto;
+  margin-left: auto;
   }
 
   /*--Section 4 : herbergement--*/
@@ -160,14 +152,16 @@
 
   .activity_card_container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     margin: auto;
+    justify-content: space-evenly;
     box-sizing: border-box;
   }
 
   figure.card {
-    width: 330px !important;
+/*    width: 330px !important;
     height: 185px !important;
+*/
     margin-bottom: 1rem;
   }
   .card img {

@@ -12,7 +12,7 @@ html body {
   box-sizing: border-box;
   overflow-x: hidden;
   margin-top: 0;
-  padding: 0 1rem;
+  padding: 0;
 
   min-width: 100%;
   margin-left: auto;
@@ -57,6 +57,7 @@ p span {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
 }
 
 #nav_head{
@@ -110,15 +111,22 @@ border-top: solid 2px white;
   font-weight: bolder;
   margin-bottom: 0px;
 }
-
+#search_text{
+  padding : 0 2rem;
+}
 
 /*--section 3 search_icon --*/
+.search_button{
+  display: inline-flex;
+  margin-left : 2rem;
+}
 
 .submit_button {
   background-color: var(--blue);
   border: solid 1px var(--blue);
   border-radius: 0 20px 20px 0;
   width: 130px;
+  cursor: pointer;
 }
 
 .submit_button span{
@@ -161,12 +169,14 @@ color: var(--blue);
   height: 54px;
 }
 
-form.search_button {
-  display: inline-flex;
-  cursor: pointer;
-}
 
 /*-- Section 4 Filtres--*/
+
+.filter_container {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 0 2rem;
+}
 
 .filter_icon {
   display: inline-flex;
@@ -195,7 +205,7 @@ form.search_button {
   font-weight: bold;
   border: solid var(--gray) 2px;
   border-radius: 50px;
-  margin-top: 0;
+  margin: 0;
   position: relative;
   padding-left: 50px;
   padding-right: 20px;
@@ -209,13 +219,10 @@ form.search_button {
   transition : 0.5s;
 }
 
-.filter_container {
-  display: flex;
-  margin-top: 30px;
-}
-
+/*-- section Info--*/
 .info {
   display: flex;
+  margin: 1.3rem 2rem; 
 }
 
 .info i {
@@ -238,8 +245,9 @@ form.search_button {
 
 .container {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   justify-content: space-between;
+  margin: 2rem;
 }
 
 /*--Section 5: Hébergement à Marseille--*/
@@ -253,7 +261,7 @@ form.search_button {
 #header_text {
   display: flex;
   align-items: flex-end;
-  margin-top: 5vh;
+  padding: 1rem 2rem 0 2rem;
 }
 
 div#section_foot_text {
@@ -265,15 +273,11 @@ div#section_foot_text {
   font-weight: bolder;
 }
 
-#header_text h3  {
-  font-weight: bold;
-  padding-left: 2.5vw;
-}
 
 #section_foot_text h3 {
   font-size: 1.2em;
   font-weight: bold;
-  padding-left: 2.5vw;
+  padding-left: 2rem;
 }
 
 div.hotel_container {
@@ -302,7 +306,6 @@ div.hotel_container {
 .fig_herbergement:hover {
   transform: scale(1.02);
   transition: 0.3s;
-  opacity: 0.8;
   box-shadow: 0 4px 20px 0 rgba(68, 68, 68, 0.5);
 }
 
@@ -335,16 +338,16 @@ p.text_price {
   background-color: var(--gray);
   border-radius: 20px 20px 20px 20px;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: flex-start;
   height: fit-content;
   margin: 0;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .aside_container {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: flex-start;
   margin-top: 0;
   margin-right: auto;
@@ -357,7 +360,7 @@ p.text_price {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0;
+  margin :0;
 }
 
 .fig_aside {
@@ -365,38 +368,40 @@ p.text_price {
   height: 140px;
   border: white solid 5px;
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
   margin-top: 0;
   overflow: hidden;
   background-color: white;
   margin-bottom: 2rem;
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
 }
 
 .figcap_aside{
-  padding : 0 1rem;
+  padding : 1rem;
 }
 .fig_aside img {
   width: 125px;
-  max-width: 100%;
   height: 100%;
-  max-height: 100%;
-  margin-right: 0;
   object-fit: cover;
 }
 
 
 .aside_star {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .fig_aside:hover {
   transition: 0.3s;
-  opacity: 0.8;
   box-shadow: 0 4px 20px 0 rgba(68, 68, 68, 0.5);
+  transform: scale(1.02);
+
 }
 
 /*--section 7: Activity --*/
 
+#activity{
+  margin : 2rem;
+}
 h2 {
   font-weight: bold;
 }
@@ -407,15 +412,13 @@ h2 {
 
 .activity_card_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 195px 40px 40px 170px;
-  grid-auto-columns: auto;
-  grid-auto-rows: auto;
+  grid-template-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+  grid-template-rows: 170px 50px 25px 25px 50px 120px 50px;
   box-sizing: border-box;
+  grid-auto-columns: 1rem;
 }
 
 figure.card {
-  /* box-sizing: border-box;*/
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
@@ -423,15 +426,14 @@ figure.card {
 }
 
 figure.card img {
-  width: 100%;
-
+  width : 100%;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 4px 8px 0 rgba(139, 83, 83, 0.2);
   object-fit: cover;
 }
 .card:hover {
   transition: 0.3s;
-  opacity: 0.8;
+  transform: scale(1.03); 
   box-shadow: 0 4px 20px 0 rgba(68, 68, 68, 0.5);
 }
 
@@ -445,35 +447,28 @@ figcaption {
 /*--card 1--*/
 #card_1 {
   grid-column: 1/2;
-  max-height: 445px;
-  max-width: 18.75rem;
-  width: 100%;
+  grid-row: 1/7;
 }
 #card_1 img {
-  height: 395px;
+  height: 440px;
   object-fit: cover;
 }
 /*--card 2--*/
 #card_2 {
-  grid-column: 2/3;
-  max-height: 235px;
-  max-width: 300px;
-  width: 100%;
+  grid-column: 3/4;
+  grid-row: 1/5;
 }
 
 #card_2 img {
-  height: 185px;
+  height: 220px;
   object-fit: cover;
 }
 
 /*--card 3--*/
 
 #card_3 {
-  grid-column: 2/3;
-  grid-row: 4/5;
-  max-height: 170px;
-  max-width: 300px;
-  width: 100%;
+  grid-column: 3/4;
+  grid-row: 6/7;
 }
 #card_3 img {
   height: 120px;
@@ -483,41 +478,34 @@ figcaption {
 /*--card 4--*/
 
 #card_4 {
-  grid-column: 3/4;
-  max-height: 445px;
-  max-width: 300px;
-  width: 100%;
+  grid-column: 5/6;
+
 }
 
 #card_4 img {
-  height: 395px;
+  height: 440px;
   object-fit: cover;
 }
 
 /*--card 5--*/
 
 #card_5 {
-  grid-column: 4/5;
-  max-height: 195px;
-  max-width: 300px;
+  grid-column: 7/8;
   width: 100%;
 }
 
 #card_5 img {
-  height: 140px;
+  height: 170px;
   object-fit: cover;
 }
 
 /*--card 6--*/
 #card_6 {
-  grid-column: 4/5;
-  grid-row: 3/5;
-  max-height: 210px;
-  max-width: 300px;
-  width: 100%;
+  grid-column: 7/8;
+  grid-row: 5/8;
 }
 #card_6 img {
-  height: 160px;
+  height: 170px;
   object-fit: cover;
 }
 
@@ -532,30 +520,30 @@ footer {
   background-color: var(--gray);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 100%;
+  justify-content: space-between;
 }
 
 .footer li:first-child {
   font-weight: bold;
-  margin: 2em 0 0.5em 0;
+  margin: 2rem 0 0.5rem 0;
 }
 
+
 .footer li {
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
 }
 
 .footer a:hover {
   color: var(--blue);
-
 }
 
 .footer {
-  padding: 0 7rem 0 2rem;
+  padding: 0 15rem 0 1rem;
+  margin : 0;
 }
 
 /**-----@medie queries section --*/
-@media screen and (min-width: 1560px) {
+@media screen and (min-width: 1500px) {
   html body {
     margin-right: auto;
     margin-left: auto;
