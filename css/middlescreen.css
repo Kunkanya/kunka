@@ -1,5 +1,5 @@
 /* -- Media queries for mobile --*/
-@media only screen and (max-width: 1040px) and (min-width: 680px) {
+@media only screen and (max-width: 1040px) and (min-width: 730px) {
   html body {
     box-sizing: border-box;
     margin: 0;
@@ -16,23 +16,22 @@
   #search_text,
   .search_button,
   .filter_container,
-  .info,
-  #header_text,
-  #section_foot_text,
-  #activity_header {
-    padding-left: 1rem !important;
-    padding-right: 1rem;
+  .info{
+    margin : 0;
+    padding-left: 2rem ;
+    padding-right: 2rem;
+
   }
   
   /*--section 1 navigation --*/
 
-#logo{
-  padding: 1rem;
-}
+  #logo{
+    padding-top: 2rem;
+  }
   #inscrire span{
     position: absolute;
-    top: 1.5rem;
-    right : 1rem;
+    top: 2.5rem;
+    right : 2rem;
   }
 
   nav.nav_bar_desktop{
@@ -95,19 +94,19 @@
   /*section 6 : aside--*/
   #aside_wrapper{
   border-radius: 0;
-  margin:0;
-  padding:0;
-  width:100%;
-  overflow: scroll;
+  margin-left: -2rem;  
+  margin-right: 0;  
+  padding: 0;
 }
 
   .aside_container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
     padding: 0;
-    margin: 0 1rem;
-    width: calc(100% - 2rem);
+    margin: 0 auto;
+    width : calc(100% - 4rem);
   }
 
   .fig_aside{
@@ -119,53 +118,66 @@
   display: flex;
   justify-content: space-between;
   align-items: center;  
-  width : calc(100% - 2rem);
+  width : calc(100% - 4rem);
   margin-right: auto;
   margin-left: auto;
   }
 
   /*--Section 4 : herbergement--*/
-  .fig_herbergement {
-    width: 320px;
-    margin-bottom: 1em;
+  #header_text{
+    padding: 1rem 0;
   }
   #herbergement {
-    width: 100%;
+    width : 100%;
     background-color: white;
     border-radius: 0;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  .hotel_container {
-    display: flex;
-    flex-direction: column;
   }
 
-  #header_text span {
+  #section_foot_text h3{
     padding-left: 0;
   }
+ 
   /*-- section 7 activity--*/
+  #activity_header {
+    margin : 0;
+  }
   #activity {
     display: flex;
     flex-direction: column;
   }
 
   .activity_card_container {
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    justify-content: space-evenly;
-    box-sizing: border-box;
+    display :grid;
+    grid-template-columns: 1fr 2rem 1fr;
+    grid-template-rows: 180px 2rem 180px 2rem 180px;
   }
-
-  figure.card {
-/*    width: 330px !important;
-    height: 185px !important;
-*/
-    margin-bottom: 1rem;
-  }
+  
   .card img {
     height: 130px !important;
+  }
+
+  #card_1{
+    grid-column: 1/2;
+  }
+  #card_2{
+    grid-column: 3/4;
+  }
+  #card_3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #card_4{
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  #card_5{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #card_6{
+    grid-column: 3/4;
+    grid-row: 5/6;
+
   }
 
   /*--Footer--*/
@@ -174,13 +186,5 @@
     flex-direction: column;
     margin-bottom: 7rem;
   }
-  .footer {
-    padding-left: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 
-  .assistance {
-    margin-bottom: 3rem;
-  }
 }
