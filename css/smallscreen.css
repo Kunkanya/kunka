@@ -42,6 +42,7 @@
 
 
   .nav_bar_desktop{
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -265,7 +266,6 @@ padding: 1.3rem 1rem ;
   line-height: normal;
 }
 
-
 /*-- Section footer --*/
 footer{
   padding: 2rem 1rem;
@@ -282,3 +282,30 @@ footer{
 
 
 
+@media screen and (max-width: 320px){
+
+  #search_text h1{
+    font-size: 1.1rem;
+  }
+  #search_text p{
+    font-size: 0.8rem;
+  }
+ .hover_blue{
+  padding: 1.3rem 1rem;
+ }
+ #nav_bar li a{
+   font-size: 0.9em;
+ }
+ .filter_link h4{
+   font-size: 1rem;
+   padding-left: 40px;
+   padding-right: 10px;
+   height: 40px;
+ }
+ .filter_icon i{
+   font-size: 0.9rem;
+   width:40px;
+   height: 40px;
+ }
+ 
+}
